@@ -11,6 +11,7 @@ const TRENDING_TASKS: TrendingTask[] = [
   { id: 't1', brandLogo: '', hero: 'https://picsum.photos/seed/turf1/800/600', title: 'Spotify Refresher', time: '07:30 PM', dateText: 'Saturday, June 7', relative: '2 days from now', location: 'Independence Brewing Co · Powai', isNew: true },
   { id: 't2', brandLogo: '', hero: 'https://picsum.photos/seed/turf2/800/600', title: 'Campus Creator Meetup', time: '05:00 PM', dateText: 'Sunday, June 15', relative: '10 days from now', location: 'WeWork Nesco · Goregaon' },
   { id: 't3', brandLogo: '', hero: 'https://picsum.photos/seed/turf3/800/600', title: 'Reels Remix Challenge', time: '11:00 AM', dateText: 'Monday, June 23', relative: '18 days from now', location: 'Online · Pan India' },
+  { id: 't4', brandLogo: '', hero: 'https://picsum.photos/seed/turf1/800/600', title: 'Spotify Refresher', time: '07:30 PM', dateText: 'Saturday, June 7', relative: '2 days from now', location: 'Independence Brewing Co · Powai', isNew: true },
 ];
 
 const ACTIVE_CAMPAIGNS: Campaign[] = [
@@ -102,7 +103,7 @@ const AssignedTaskCard: React.FC<{ item: AssignedTask }> = ({ item }) => {
       {/* Text block */}
       <View style={assignedStyles.textWrap}>
         <Text style={assignedStyles.brand}>{item.brand}</Text>
-        <Text style={assignedStyles.desc} numberOfLines={2}>
+        <Text style={assignedStyles.desc} numberOfLines={3}>
           {item.description}
         </Text>
       </View>
@@ -121,7 +122,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
   },
-  headerTitle: { fontSize: 22, fontWeight: '700', color: '#1C1C1C', fontFamily: 'DM-Sherif'},
+  headerTitle: { fontSize: 22, fontWeight: '400', color: '#000000', fontFamily: 'DMSerifText'},
   headerIcons: { flexDirection: 'row', alignItems: 'center' },
   icon: { fontSize: 18 },
 
@@ -148,19 +149,19 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     elevation: 2,
   },
-  tabText: { color: '#6C6C6C', fontSize: 14, fontWeight: '600' },
+  tabText: { color: '#6C6C6C', fontSize: 14, fontWeight: '600' , fontFamily: 'Nunito'},
   tabTextActive: { color: '#000000' },
 
-  sectionTitle: { marginTop: 18, marginBottom: 10, paddingHorizontal: 16, fontSize: 16, fontWeight: '500', color: '#000000', fontFamily: "DM-Sherif" },
+  sectionTitle: { marginTop: 18, marginBottom: 10, paddingStart: 16, fontSize: 16, fontWeight: '500', color: '#000000', fontFamily: "DMSerifText" },
 
   campaignHeaderRow: { flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, marginTop: 20 },
   badge: {
     marginLeft: 8,
-    fontSize: 12,
+    fontSize: 10,
     color: '#1C79D1',
     backgroundColor: '#E9F4FF',
     paddingHorizontal: 8,
-    paddingVertical: 2,
+    paddingVertical: 4,
     borderRadius: 999,
     overflow: 'hidden',
   },
@@ -178,7 +179,7 @@ const assignedStyles = StyleSheet.create({
   },
   poster: {
     width: '100%',
-    height: 120, // adjust to your asset aspect ratio
+    height: 160,
   },
   textWrap: {
     paddingHorizontal: 12,
@@ -187,12 +188,13 @@ const assignedStyles = StyleSheet.create({
   brand: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#1C1C1C',
+    color: '#0000000',
     marginBottom: 6,
   },
   desc: {
-    fontSize: 12,
-    color: '#6A6A6A',
+    fontSize: 14,
+    fontWeight: '400',
+    color: '#666666',
     lineHeight: 16,
   },
 });

@@ -41,5 +41,5 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   campaignImg: { width: '100%', height: '100%' },
-  campaignName: { marginTop: 6, fontSize: 12, color: '#4B4B4B' },
+  campaignName: { marginTop: 6, fontSize: 14, color: '#000000' , fontFamily: 'Nunito', fontWeight:'400'},
 });

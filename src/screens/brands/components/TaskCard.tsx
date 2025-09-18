@@ -67,8 +67,8 @@ const styles = StyleSheet.create({
     ribbonText: { color: '#1C79D1', fontSize: 12, fontWeight: '700' },
 
     metaBox: { paddingHorizontal: 12, paddingVertical: 12 },
-    taskTitle: { fontSize: 16, fontWeight: '700', color: '#1C1C1C', marginBottom: 8 },
-    metaRow: { flexDirection: 'row', alignItems: 'center', marginTop: 6 },
+    taskTitle: { fontSize: 16, fontWeight: '400', color: '#1C1C1C', marginBottom: 5,fontFamily: 'DMSerifText' },
+    metaRow: { flexDirection: 'row', alignItems: 'center', marginTop: 4 },
     metaIcon: { marginRight: 8 },
-    metaText: { color: '#5A5A5A' },
+    metaText: { color: '#808080', fontFamily: 'Nunito', fontSize: 12, fontWeight: 400 },
 });

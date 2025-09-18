@@ -9,7 +9,7 @@ const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
 const TrendingCarousel: React.FC<Props> = ({ data }) => {
   const CARD_GAP = 14;
-  const CARD_WIDTH = Math.round(SCREEN_WIDTH * 0.82);
+  const CARD_WIDTH = Math.round(SCREEN_WIDTH * 0.86);
   const SIDE_SPACER = Math.round((SCREEN_WIDTH - CARD_WIDTH) / 2);
 
   const flatRef = useRef<FlatList<TrendingTask>>(null);
